@@ -30,21 +30,44 @@
 
 ## 実行環境
 
-- Godot 4.7 stable
-- GDScript
-- 外部アセットなし
+このリポジトリでは、次の環境を基準とします。
+
+* Windows 11
+* WSL2
+* Ubuntu 24.04
+* WSLg
+* Godot 4.7 stable
+* GDScript
+* 外部アセットなし
+
+Godotは、Windows版ではなく、WSL2 Ubuntu上のLinux版を使用します。
+
+WSL2 UbuntuとGodotの導入方法については、[WSL2 Ubuntuでの環境構築](docs/setup-wsl2-ubuntu.md)を参照してください。
 
 ## 実行方法
 
-1. Godot でこのフォルダーをインポートします。
-2. `project.godot` を開きます。
-3. **Run Project** を実行します。
+WSL2 Ubuntuでリポジトリを取得します。
 
-コマンドラインから Godot を利用できる場合は、次でも起動できます。
+```bash
+cd ~
+git clone https://github.com/YoshiyukiKono/worm-game-flat.git
+cd worm-game-flat
+```
+
+Godot Editorを開く場合は、次を実行します。
+
+```bash
+godot --editor --path .
+```
+
+ゲームを直接起動する場合は、次を実行します。
 
 ```bash
 godot --path .
 ```
+
+Godot Editorから実行する場合は、プロジェクトを開いた後、画面右上の **Run Project** または `F6` を使用します。
+
 
 ## リポジトリ構成
 
